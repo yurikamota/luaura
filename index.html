@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Luaura</title>
+  <link rel="icon" type="image/png" href="images/moonaura.png">
+</head>
+<body>
+   
+  <nav id="navbar">
+    <div id="hamburguer" onclick="toggleMenu()"><i id="hamburguer-icon" class="fas fa-bars"></i></div>
+    <ul id="nav-menu">
+      <li><a href="#articles">Articles</a></li>
+      <li><a href="#tarot">Daily Tarot</a></li>
+      <li><a href="#ebook">Ebook</a></li>
+      <li><a href="#shop">Shop</a></li>
+    </ul>
+  </nav>
+  
+  <!-- Página 1 - Hero -->
+  <section id="hero">
+    <h1>L<img src="images/moonaura.png" alt="Lua deitada" style="height: 1em; vertical-align: middle;">aura</h1>
+    <p>Discover daily insights and guidance 
+      for your spiritual path.</p>
+    <div class="stars-container">
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+    </div>
+    
+  </section>
+
+  <!-- Página 2 - Artigos -->
+  <section id="articles">
+    
+      <h2>Last Articles</h2>
+    <div class="articles-container">
+     <div class="article" onclick="window.location.href='artigo1.html'">
+      <img src="images/artigo1.png">
+      <h3>Is living abroad in your destiny? What the Vedic Astrology Birth Chart can reveal</h3>
+      <br>
+      <p>Discover the main indicators that point to living in another country</p>
+     </div>
+     <div class="article" onclick="window.location.href='artigo2.html'">
+      <img src="images/artigo2.png">
+      <h3>Rulerships and the Nature of the Planets in Jyotish</h3>
+      <br>
+      <p>Understand where planets rule and how they behave in a Vedic birth chart.</p>
+     </div>
+    </div>
+   
+  </section>
+
+  <!-- Página 3 - Tarot do Dia -->
+  <section id="tarot">
+    <h2 class="typing-text">think of a question and click on the card...</h2>
+    <div class="tarot-container">
+      <div class="tarot-card" onclick="revealCard(this)">
+        <div class="card-face card-front"></div>
+        <div class="card-face card-back" id="drawn-card"></div>
+      </div>
+    </div>
+    <div class="tarot-message" id="tarot-message">
+       <h3 id="card-title"></h3>
+    <blockquote id="card-verse"></blockquote>
+    <p id="card-subtitle"></p>
+  </div>
+  
+    </section>
+
+  <!-- Página 4 - Ebook -->
+  <section id="ebook">
+    
+      <h2>E-book</h2>
+      <div class="ebook-container">
+      <img src="images/tarotebook.png" alt="Tarot and Love">
+      <h3>Tarot and Love: a guide to deeper, intuitive love readings</h3>
+      <br>
+      <p>Love can be magical, but also full of doubts. When emotions cloud our judgment, we   seek clarity. And Tarot, when read with intention, becomes a mirror of the soul.
+        <br> <br>
+        This e-book was created for those who are tired of guessing.
+        If you want to understand what the cards are really saying about your love life, beyond clichés, beyond yes or no. This guide is for you.</p>
+      <br>
+     <button onclick="window.open('https;//www.amazon.com.br/seu-link-ebook', '_blank')">Soon</button>
+    </div>
+    
+  </section>
+
+  <section id="shop">
+    
+      <h2 class="section-h2">Shop</h2>
+    <div class="shop-container">
+    <div class="shop-item">
+      <img src="images/shop1.png" alt="Product 1">
+      <button onclick="window.open('https://ecommerce.com/product1', '_blank')">Soon</button>
+    </div>
+    <div class="shop-item">
+      <img src="images/shop2.png" alt="Product 2">
+      <button onclick="window.open('https://ecommerce.com/product1', '_blank')">Soon</button>
+    </div>
+    <div class="shop-item">
+      <img src="images/shop3.png" alt="Product 3">
+      <button onclick="window.open('https://ecommerce.com/product1', '_blank')">Soon</button>
+    </div>
+  </div>
+    
+  </section>
+
+  <footer id="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Luaura. All rights reserved.</p>
+      <div class="social-contact">
+        <a href="https://www.instagram.com/luaurainsights/" target="_blank" class="footer-link">
+          <i class="fa-brands fa-instagram"></i> luaurainsights
+        </a>
+        <a href="mailto:luaurainsights@gmail.com" class="footer-link">
+          <i class="fas fa-envelope"></i> contact
+        </a>
+      </div>
+    </div>
+  </footer>
+  
+
+  <script src="script.js" defer></script>
+
+
+</body>
+</html>
